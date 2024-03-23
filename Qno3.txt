@@ -1,0 +1,20 @@
+import java.util.TreeMap;
+
+public class TreeMapExample {
+    public static void main(String[] args) {
+        // Create a TreeMap to store employee IDs and names
+        TreeMap<Integer, String> employeeMap = new TreeMap<>();
+
+        // Add employee IDs and names to the TreeMap
+        employeeMap.put(1001, "Hema");
+        employeeMap.put(1002, "Kumar");
+        employeeMap.put(1003, "Arun");
+        employeeMap.put(1004, "Bala");
+
+        // Print the names of all employees in alphabetical order
+        System.out.println("Names of all employees in alphabetical order:");
+        for (String name : employeeMap.values()) {
+            System.out.println(name);
+        }
+    }
+}
